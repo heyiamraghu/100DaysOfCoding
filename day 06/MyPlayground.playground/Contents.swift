@@ -35,3 +35,38 @@ while countDown > 0 {
     countDown -= 1
 }
 print("Launched")
+
+
+var id = Int.random(in: 1...25)
+while id > 0 {
+    print("\(id)..")
+    id -= 1
+}
+
+var roll = 0
+while roll != 3 {
+    roll = Int.random(in: 1...5)
+    print("I rolled a \(roll)")
+}
+
+
+let filenames = ["me.jpg", "work.txt", "sophie.jpg", "logo.psd"]
+for filename in filenames {
+    if filename.hasSuffix(".jpg") == false {
+        continue
+    }
+    print("Found picture: \(filename)")
+}
+
+let numbers = 1...100
+for number in numbers {
+    if number.isMultiple(of: 3) && number.isMultiple(of: 5) {
+        print("FizzBuzz")
+    } else if number.isMultiple(of: 5) {
+        print("Buzz")
+    } else if number.isMultiple(of: 3) {
+        print("Fizz")
+    } else {
+        print(number)
+    }
+}
