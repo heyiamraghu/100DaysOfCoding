@@ -65,6 +65,12 @@ type(of: name)
 let (firstName, lastName) = name
 firstName
 
+let players = Array<String>()
+let playerDetails = Dictionary<String, String>()
+var team = Set<String>()
+team.insert("Raghu")
 
+
+let teamTwo: Set<String> = ["Raghu", "Raja"]
 
 
