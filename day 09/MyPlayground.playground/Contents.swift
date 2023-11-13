@@ -118,3 +118,19 @@ doWork {
     print("Third work Completed")
 }
 
+
+let luckyNumbers = [7, 4, 38, 21, 16, 15, 12, 33, 31, 49]
+
+let newLuckyNumbers = luckyNumbers.filter { item in
+    item.isMultiple(of: 2)
+}
+print(newLuckyNumbers)
+
+let luckyNumbersAscending = luckyNumbers.sorted { num1, num2 in
+    num1 < num2
+}
+print(luckyNumbersAscending)
+
+let luckyNumbersMapped = luckyNumbers.map { item in
+    print("\(item) is a lucky number")
+}
