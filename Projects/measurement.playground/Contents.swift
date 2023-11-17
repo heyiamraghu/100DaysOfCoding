@@ -9,7 +9,7 @@ let units: [UnitTemperature] = [.celsius, .fahrenheit, .kelvin]
 
 
 
-let celsius = UnitTemperature.celsius.
+let celsius = UnitTemperature.celsius
 let fahrenheit = UnitTemperature.fahrenheit
 let kelvin = UnitTemperature.kelvin
 
@@ -20,7 +20,7 @@ let outputTempUnit = fahrenheit
 
 let value = Measurement(value: inputTemp, unit: inputTempUnit)
 let converted = value.converted(to: outputTempUnit).value
-print(type(of: converted))
+//print(type(of: converted))
 
 
 let formatter = MeasurementFormatter()
