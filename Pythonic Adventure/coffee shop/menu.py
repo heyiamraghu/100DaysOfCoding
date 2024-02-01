@@ -1,8 +1,5 @@
 from menu_function import menu
-
-drinks = ["chocolate", "coffee", "decaf"]
-flavors = ["caramel", "vanilla", "peppermint", "raspberry", "plain"]
-toppings = ["chocolate", "cinnamon", "caramel"]
+from files import drinks, flavors, toppings
 
 drink_choice = menu(drinks, "Here's the list of drinks:", "Choose your drink: ")
 flavor_choice = menu(flavors, "Here's the list of flavors:", "Choose your flavor: ")
