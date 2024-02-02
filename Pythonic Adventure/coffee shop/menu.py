@@ -7,6 +7,8 @@ topping_choice = menu(toppings, "Here's the list of toppings:", "Choose your top
 
 
 # print(f"You've ordered {drinks[int(drink) - 1]} flavored with {flavors[int(flavor) - 1]} with {toppings[int(topping) - 1]} toppings.")
+
+
 print("Here's your order details:")
 print(f"Main product: {drink_choice}")
 print(f"Flavor: {flavor_choice}")
