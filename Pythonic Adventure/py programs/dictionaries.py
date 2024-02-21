@@ -38,6 +38,6 @@ for number in range(0, len(words)):
     brief = input(f"Brief '{keyword}':")
     glossary[keyword] = brief
 
-for key, value in glossary.items():
-    print(f"{key}: {value}")
+for keyword, description in glossary.items():
+    print(f"{keyword}: {description}")
     
