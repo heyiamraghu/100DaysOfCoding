@@ -36,3 +36,10 @@ aliens = [alien_0, alien_1, alien_2]
 
 for alien in aliens:
     print(alien)
+
+aliens = []
+for alien in range(30):
+    aliens.append({'color': 'green', 'points': 5, 'speed': 'slow'})
+
+for alien in aliens[:5]:
+    print(alien)
