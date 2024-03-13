@@ -1,0 +1,30 @@
+body {
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: sans-serif;
+}
+
+.menu {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: burlywood;
+    padding: 20px;
+}
+
+h1, h2, .established {
+    text-align: center;
+}
+
+.item p {
+    display: inline-block;
+}
+
+.flavor, .dessert {
+    text-align: left;
+    width: 60%;
+}
+
+.price {
+    text-align: right;
+    width: 39%;
+}
