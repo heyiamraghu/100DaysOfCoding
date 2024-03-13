@@ -4,7 +4,7 @@ body {
 }
 
 .menu {
-    width: 60%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     background-color: burlywood;
@@ -13,6 +13,15 @@ body {
 
 h1, h2, .established {
     text-align: center;
+}
+
+h1, h2 {
+    font-size: 35px;
+    padding: 0px;
+}
+
+.established {
+    font-style: italic;
 }
 
 .item p {
@@ -24,7 +33,46 @@ h1, h2, .established {
     width: 60%;
 }
 
+.item {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 .price {
     text-align: right;
     width: 39%;
+}
+
+hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
+}
+
+/*FOOTER*/
+footer p {
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+footer a:visited {
+    color: black;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer a:active {
+    color: brown;
 }
