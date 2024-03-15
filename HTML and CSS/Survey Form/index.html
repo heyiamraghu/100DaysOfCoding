@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Feedback Form</h1>
+    <p id="description">Thank you for visiting Tamil Nadu! Please share your feedback.</p>
+    <form action="" id="survey-form">
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label for="name" id="name-label">Enter Your Name: 
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </label>
+            <label for="email" id="email-label"> Enter Your Email Address: 
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </label>
+            <label for="number" id="number-label">Enter Your Phone Number: 
+                <input type="number" name="number" id="number" min="0" max="9999999999" pattern="^([+][9][1]|[9][1]|[0]){0,1}([7-9]{1})([0-9]{9})$" placeholder="Phone number">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Place</legend>
+            <label for="dropdown">Indian or a Tourist: 
+                <select name="is-indian" id="dropdown">
+                    <option value="Indian">Indian</option>
+                    <option value="Non-Indian">Tourist</option>
+                </select>
+            </label>
+            <label for="city-from">Where You're From?
+                <input type="text" name="city-from" id="city-from" placeholder="Type in the city or country name">
+            </label>
+            <legend>Transport Mode (required) </legend>
+            <label for="flight">
+                <input type="radio" class="inline" name="transport-mode" id="flight" value="Flight"> Flight
+            </label>
+            <label for="train">
+                <input type="radio" class="inline" name="transport-mode" id="train" value="Train">
+                Train
+            </label>
+            <label for="car">
+                <input type="radio" class="inline" name="transport-mode" id="car" value="Car">
+                Car
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>
+              Select All the Places Visited
+            </legend>
+            <label for="chennai"> 
+                <input type="checkbox" class="inline" name="places-visited" id="chennai" value="Chennai"> Chennai
+            </label>
+            <label for="madurai"> 
+                <input type="checkbox" class="inline" name="places-visited" id="madurai" value="Madurai"> Madurai
+            </label>
+            <label for="kanniyakumari"> 
+                <input type="checkbox" class="inline" name="places-visited" id="kanniyakumari" value="Kanniyakumari"> Kanniyakumari
+            </label>
+            <label for="trichy"> 
+                <input type="checkbox" class="inline" name="places-visited" id="trichy" value="Trichy"> Trichy
+            </label>
+            <label for="salem"> 
+                <input type="checkbox" class="inline" name="places-visited" id="salem" value="Salem"> Salem
+            </label>
+            <label for="comments">Additional Comments:
+                <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" id="submit">
+    </form>
+</body>
+</html>
